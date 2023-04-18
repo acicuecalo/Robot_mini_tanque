@@ -34,10 +34,10 @@ void leerBotones() {
   botonDerechaPulsado = !digitalRead(PIN_BOTON_DERECHA);
 
   if (botonIzquierdaPulsado) {
-    ejeX = -pesoSalidaEjeY;
+    ejeX = -pesoSalidaEjeX;
   }
   else if (botonDerechaPulsado) {
-    ejeX = pesoSalidaEjeY;
+    ejeX = pesoSalidaEjeX;
   } else {
     ejeX = 0;
   }
